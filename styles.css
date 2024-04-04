@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 body {
-    background: linear-gradient(56deg, rgba(131,58,180,1) 0%, rgba(48,107,86,0.8519782913165266) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(56deg, rgba(131, 58, 180, 1) 0%, rgba(48, 107, 86, 0.8519782913165266) 50%, rgba(252, 176, 69, 1) 100%);
     width: 100%;
     min-height: 100vh;
     padding: 12px 60px;
@@ -24,7 +24,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 20px;
 
 }
 
@@ -32,7 +32,7 @@ nav {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
-    color: #f7f0ed;
+    color: #f8f8fd;
     text-decoration: none;
     position: relative;
 
@@ -48,24 +48,26 @@ nav {
     background-color: #FF4500;
     transition: 0.2s ease;
 }
+
 .underline:hover:after {
     width: 100%;
-    
+
 }
 
 .btn-link {
     padding: 10px 20px;
     border: 1px solid #FF4500;
     border-radius: 41px;
-    counter-increment: 10px;
 
-    
+
+
 }
 
 .btn-link:hover {
     opacity: 0.7px;
-     
+
 }
+
 section {
     display: flex;
     align-items: center;
@@ -74,7 +76,6 @@ section {
 
 .container-left {
     width: 50%;
-    padding: 0px;
     height: 450px;
     position: relative;
 
@@ -86,32 +87,31 @@ section {
     bottom: 60px;
     left: -50px;
     animation: moveAbobora 2s infinite alternate ease-in-out;
-
-
 }
 
 .container-left-info {
     position: absolute;
     bottom: 0px;
     left: 50px;
-
     padding-right: 20px;
-    border-right: 2px solid #a7de93;
+    border-right: 1px solid #a7de93;
     display: flex;
     flex-direction: column;
     justify-content: end;
     height: 85px;
 }
-.container-left-info::after {
+
+.container-left-info:after {
     content: "";
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: #a7de99;
     position: absolute;
-    right: -7px;
+    right: -6px;
     top: -8px;
 }
+
 .container-left-info p:first-child {
     font-weight: 700;
     font-size: 20px;
@@ -131,7 +131,7 @@ section {
     width: 420px;
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 12px;
 }
 
 h2 {
@@ -155,7 +155,8 @@ h2 {
     line-height: 180%;
     color: #ffffff;
     opacity: 0.8;
-} 
+
+}
 
 .container-actions {
     display: flex;
@@ -170,8 +171,8 @@ h2 {
     font-size: 15px;
     line-height: 22px;
     text-align: center;
-    color: #fcfcf7;
-    background-image: url("./assets.img/Btn.primery.png");
+    color: #303056;
+    background-image: url("./assets/Btn.primery.png");
     background-color: transparent;
     border: none;
     padding: 29px 43px;
@@ -185,10 +186,9 @@ h2 {
 
 }
 
-
 .container-actions a {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     font-weight: 600;
     font-size: 15px;
@@ -199,66 +199,74 @@ h2 {
 }
 
 .container-actions a:hover {
-    opacity: 0.5px;
-    color: #FF4500;
+    opacity: 0.8;
+    
 }
 
 .btn-ghost {
+    font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    color: #f8f8fd;
+    color: #ffffff;
     display: block;
     margin: 12px auto;
     background-color: transparent;
     border: none;
-    background-image: url("./assets.img/Btn.secondary.svg");
+    background-image: url("./assets/Btn.secondary.svg");
     padding: 34px 43px;
-    overflow: hidden;
-    white-space: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    
+}
+.btn-ghost:hover {
+    color: #110500;
+    cursor: pointer;
 }
 
-.btn-ghost:hover {
-    color: #FF4500;
-}
 
 @keyframes moveAbobora {
-    from{
+    from {
         transform: translate(-5%, -5%) rotate(15deg);
 
     }
 
-    to{
+    to {
         transform: translate(0, 0) rotate(-15deg);
 
     }
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     body {
         padding: 12px 24px;
         overflow-x: hidden;
     }
 
-    nav{
+    nav {
         display: none;
 
     }
-    section{
+
+    section {
         flex-direction: column;
     }
+
     .container-left {
         display: flex;
         width: 100%;
         justify-content: center;
 
     }
+
     .container-left img {
         width: 80%;
     }
+
     .container-left-info {
         left: auto;
     }
+
     .container-right {
         width: 100%;
         text-align: center;
@@ -267,4 +275,3 @@ h2 {
 
 
 }
-

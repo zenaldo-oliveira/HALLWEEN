@@ -212,14 +212,14 @@ h2 {
     margin: 12px auto;
     background-color: transparent;
     border: none;
-    background-image: url("./assets/Btn.secondary.svg");
+    background-image: url("./assets/Btn.secondary.svg"); 
     padding: 34px 43px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     
 }
 .btn-ghost:hover {
-    color: #110500;
+    color: #060a05;
     cursor: pointer;
 }
 
